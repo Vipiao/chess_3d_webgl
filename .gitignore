@@ -1,0 +1,5 @@
+.vscode/
+*.pdn
+*conflicted copy*
+.DS_Store
+Thumbs.db

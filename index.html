@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Chess game artificial intelligence</title>
+	<script src="utilities/tool.js"></script>
+	<script src="utilities/matrix.js"></script>
+	<script src="utilities/vector.js"></script>
+	<script src="utilities/keyboard_control.js"></script>
+	<script src="utilities/mouse_control.js"></script>
+	<script src="utilities/render_engine/model.js"></script>
+	<script src="utilities/render_engine/render.js"></script>
+	<script src="utilities/render_engine/shader_program.js"></script>
+	<script src="utilities/render_engine/camera.js"></script>
+	<!-- load model data -->
+	<script src="models/exported/pawn/chess_pawn.js"></script>
+	<script src="models/exported/knight/chess_knight.js"></script>
+	<script src="models/exported/rook/chess_rook.js"></script>
+	<script src="models/exported/bishop/chess_bishop.js"></script>
+	<script src="models/exported/queen/chess_queen.js"></script>
+	<script src="models/exported/king/chess_king.js"></script>
+	<script src="models/exported/board/chess_board.js"></script>
+	<script src="models/exported/texture_test/texture_test.js"></script>
+	<script src="models/exported/texture_test_02/texture_test_02.js"></script>
+	<script src="models/exported/torus/torus.js"></script>
+	<!-- load textures -->
+	<img id="texture_board" hidden src="textures/board.jpg"></img>
+	<img id="texture_wood" hidden src="textures/wood.jpg"></img>
+	<img id="texture_wood_white" hidden src="textures/wood_white.jpg"></img>
+	<!--<script src="textures/chess_board_texture.js"></script>-->
+	<!---->
+	<script src="chess_pieces_vert.js" id="fragment_shader"></script>
+	<script src="chess_pieces_frag.js" id="vertex_shader"></script>
+	<script src="marker_frag.js"></script>
+	<script src="animator.js"></script>
+	<script src="chess_piece.js"></script>
+	<script src="marker.js"></script>
+	<script src="game_logic.js"></script>
+	<script src="artificial_intelligence.js"></script>
+	<script src="main.js"></script>
+</head>
+<body>
+	<h1 id = "heading">Loading game...</h1>
+	<!--<canvas id="canvas" width="720" height="480" style="border:1px solid black"></canvas>-->
+	<canvas id="canvas" width="1440" height="800" style="border:1px solid black"></canvas>
+	<!--<canvas id="canvas" width="1440" height="700" style="border:1px solid black"></canvas>-->
+	<pre>
+Controls:
+	Rotate:
+		w, a, s, d or arrow keys.
+	Zoom:
+		Scroll or use numpad + and -.
+	</pre>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
