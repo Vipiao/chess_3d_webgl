@@ -145,9 +145,6 @@ GameLogic.prototype.aiMakesMove = function(myColor, opponentColor){
 		this.aiDone = false;
 		
 		var pieceToMove = this.animator.getPieceFromBoardPos(new Vec2(this.aiResult.fromX, this.aiResult.fromY));
-		if(pieceToMove == null){
-			dftgyhuj = 2;
-		}
 		this.movePiece(pieceToMove, new Vec2(this.aiResult.toX, this.aiResult.toY));
 		
 		this.endTurn();

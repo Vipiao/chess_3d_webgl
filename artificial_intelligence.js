@@ -155,9 +155,6 @@ ArtificialIntelligence.prototype.getBestMoveAtLevel = function(level, myColor, o
 		if(thisSquare.team != myColor){
 			Tool.printError("WRONG COLOR STUFF!!!!!");
 		}
-		if(level == 2){
-			fdasfaerg = 2;
-		}
 		switch(thisSquare.content){
 			case ChessPiece.PAWN:
 				if(myColor == GameLogic.WHITE){
@@ -193,9 +190,6 @@ ArtificialIntelligence.prototype.getBestMoveAtLevel = function(level, myColor, o
 					}
 					// diagonal kill
 					// // right
-					if(myColor == "BLACK" && level == 1 && thisX == 1 && thisY == 3 && thisX-1 == 0 && thisY-1 == 2){
-						qwertyui=2;
-					}
 					tryMovePawn.call(this, 1, -1, function(nextSquare){
 						return nextSquare.team == opponentColor;
 					});
@@ -343,10 +337,6 @@ ArtificialIntelligence.prototype.testMove = function(oldSquare, newSquare, fromX
 	// store old information
 	var restoreList = new Array(20); // TODO:specify size // will contain information needed to restore this.board to its original state
 	var restoreListLength = 0;
-	
-	if(myColor == "BLACK" && level == 1 && fromX == 1 && fromY == 3 && toX == 0 && toY == 2){
-		qwertyui=2;
-	}
 	
 	score += movePiece.call(this, restoreList, fromX, fromY, toX, toY, oldSquare, newSquare, myPieces, opponentPieces);
 	
